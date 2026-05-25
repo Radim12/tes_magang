@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   Search,
-  Bell,
   Menu,
   X,
   Settings
@@ -212,7 +211,11 @@ export default function Layout({
                   className="w-10 h-10 md:w-[50px] md:h-[50px] bg-bank-bg rounded-full flex items-center justify-center text-bank-coral hover:bg-bank-coral/10 hover:text-[#FD3B53] border border-transparent hover:border-bank-coral/15 transition-all relative cursor-pointer"
                   title="Notifications Alert"
                 >
-                  <Bell className="w-5 h-5 md:w-[25px] md:h-[25px]" />
+                  <img
+                    src="/icons/notification-bell.svg"
+                    alt="Notifications"
+                    className="w-5 h-5 md:w-[25px] md:h-[25px] object-contain"
+                  />
                   {unreadNotificationsCount > 0 && (
                     <span className="absolute top-1 right-1 md:top-1.5 md:right-1.5 w-2.5 h-2.5 bg-bank-coral border-2 border-white rounded-full animate-ping-once" />
                   )}

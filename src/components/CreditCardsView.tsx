@@ -61,19 +61,19 @@ export default function CreditCardsView({
           <button
             type="button"
             onClick={() => setSelectedCardIdx(0)}
-            className={`h-[230px] rounded-[25px] p-6 text-white flex flex-col justify-between text-left relative overflow-hidden shadow-sm hover:scale-[1.02] transition-all cursor-pointer ${
+            className={`h-[230px] rounded-[25px] p-6 text-white flex flex-col justify-between text-left relative overflow-hidden shadow-sm hover:scale-[1.02] transition-all cursor-pointer font-lato ${
               selectedCardIdx === 0 ? 'ring-4 ring-bank-indigo ring-offset-4' : ''
             } card-gradient-blue`}
           >
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-[11px] text-white/75 font-medium uppercase mb-1">Cosmic Platinum</p>
-                <p className="text-[22px] font-extrabold font-mono">{formatCurrency(activeCard.balance || 5756)}</p>
+                <p className="text-[22px] font-extrabold">{formatCurrency(activeCard.balance || 5756)}</p>
               </div>
               <Sparkles className="text-white/40 w-8 h-8 rotate-12" />
             </div>
             <div className="flex justify-between items-center bg-gradient-to-b from-white/10 to-transparent -mx-6 -mb-6 px-6 py-[20px] border-t border-white/10">
-              <p className="text-base font-semibold font-mono">{activeCard.cardNumber}</p>
+              <p className="text-base font-semibold">{activeCard.cardNumber}</p>
               <span className="text-xs font-bold text-white/50">12/22</span>
             </div>
           </button>
@@ -81,19 +81,19 @@ export default function CreditCardsView({
           <button
             type="button"
             onClick={() => setSelectedCardIdx(1)}
-            className={`h-[230px] text-left rounded-[25px] p-6 text-yellow-500/90 flex flex-col justify-between relative overflow-hidden shadow-sm hover:scale-[1.02] transition-all cursor-pointer ${
+            className={`h-[230px] text-left rounded-[25px] p-6 text-yellow-500/90 flex flex-col justify-between relative overflow-hidden shadow-sm hover:scale-[1.02] transition-all cursor-pointer font-lato ${
               selectedCardIdx === 1 ? 'ring-4 ring-bank-indigo ring-offset-4' : ''
             } card-gradient-dark`}
           >
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-[11px] text-yellow-500/50 font-semibold uppercase tracking-wider mb-1">Gold Reserve Business</p>
-                <p className="text-[22px] font-extrabold text-yellow-500 font-mono">$24,500</p>
+                <p className="text-[22px] font-extrabold text-yellow-500">$24,500</p>
               </div>
               <Landmark className="text-yellow-500/20 w-8 h-8" />
             </div>
             <div className="flex justify-between items-center bg-zinc-900/50 -mx-6 -mb-6 px-6 py-[20px] border-t border-yellow-500/10">
-              <p className="text-base font-semibold font-mono text-white">4392 **** **** 9012</p>
+              <p className="text-base font-semibold text-white">4392 **** **** 9012</p>
               <span className="text-xs font-bold text-white/30">08/25</span>
             </div>
           </button>
@@ -101,19 +101,19 @@ export default function CreditCardsView({
           <button
             type="button"
             onClick={() => setSelectedCardIdx(2)}
-            className={`h-[230px] rounded-[25px] p-6 text-bank-navy border border-bank-border flex flex-col justify-between text-left relative overflow-hidden bg-white hover:scale-[1.02] transition-all cursor-pointer ${
+            className={`h-[230px] rounded-[25px] p-6 text-bank-navy border border-bank-border flex flex-col justify-between text-left relative overflow-hidden bg-white hover:scale-[1.02] transition-all cursor-pointer font-lato ${
               selectedCardIdx === 2 ? 'ring-4 ring-bank-indigo ring-offset-4' : ''
             }`}
           >
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-[11px] text-bank-muted font-bold uppercase tracking-wider mb-1">Sovereign Privileges</p>
-                <p className="text-[22px] font-extrabold text-bank-navy font-mono">$150,000</p>
+                <p className="text-[22px] font-extrabold text-bank-navy">$150,000</p>
               </div>
               <ShieldCheck className="text-bank-indigo w-8 h-8 stroke-[2]" />
             </div>
             <div className="flex justify-between items-center bg-gray-50 -mx-6 -mb-6 px-6 py-[20px] border-t border-gray-100">
-              <p className="text-base font-semibold font-mono text-bank-navy">5412 **** **** 5678</p>
+              <p className="text-base font-semibold text-bank-navy">5412 **** **** 5678</p>
               <span className="text-xs font-bold text-bank-muted">11/27</span>
             </div>
           </button>

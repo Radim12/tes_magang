@@ -146,7 +146,7 @@ export default function TransactionsView({
               return (
                 <div
                   key={card.id || i}
-                  className={`h-[235px] rounded-[25px] p-6 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:scale-[1.02] shadow-sm select-none ${
+                  className={`h-[235px] rounded-[25px] p-6 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:scale-[1.02] shadow-sm select-none font-lato ${
                     isBlue
                       ? 'card-gradient-blue text-white'
                       : 'bg-white border border-[#DFEAF2] text-[#343C6A]'
@@ -167,7 +167,7 @@ export default function TransactionsView({
                   <div className="flex gap-14">
                     <div>
                       <p className={`text-[12px] uppercase mb-1 ${isBlue ? 'text-white/70' : 'text-[#718EBF]'}`}>Card Holder</p>
-                      <p className="text-[15px] font-medium font-display">{card.cardHolder}</p>
+                      <p className="text-[15px] font-medium">{card.cardHolder}</p>
                     </div>
                     <div>
                       <p className={`text-[12px] uppercase mb-1 ${isBlue ? 'text-white/60' : 'text-[#718EBF]'}`}>Valid Thru</p>

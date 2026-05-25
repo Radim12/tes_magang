@@ -232,7 +232,7 @@ export default function AccountsView({
               </div>
               <div>
                 <p className="text-sm md:text-[16px] text-bank-muted font-medium mb-1">{stat.title}</p>
-                <p className="text-xl md:text-[25px] font-bold text-[#232323] tracking-tight font-display">{stat.value}</p>
+                <p className="text-xl md:text-[25px] font-bold text-[#232323] tracking-tight font-sans">{stat.value}</p>
               </div>
             </div>
           );
@@ -289,7 +289,7 @@ export default function AccountsView({
             <span className="text-[17px] text-bank-muted font-semibold">See All</span>
           </div>
           
-          <div className="bg-bank-blue p-6 md:p-[25px] rounded-[25px] h-[235px] text-white flex flex-col justify-between shadow-md relative overflow-hidden select-none">
+          <div className="bg-bank-blue p-6 md:p-[25px] rounded-[25px] h-[235px] text-white flex flex-col justify-between shadow-md relative overflow-hidden select-none font-lato">
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-[12px] text-white/70 font-normal mb-1">Balance</p>
@@ -305,7 +305,7 @@ export default function AccountsView({
             <div className="flex gap-14 justify-start">
               <div>
                 <p className="text-[11px] text-white/70 font-medium tracking-wider uppercase mb-1">CARD HOLDER</p>
-                <p className="text-[15px] font-semibold font-display">{primaryCard.cardHolder}</p>
+                <p className="text-[15px] font-semibold">{primaryCard.cardHolder}</p>
               </div>
               <div>
                 <p className="text-[11px] text-white/70 font-medium tracking-wider uppercase mb-1">VALID THRU</p>
