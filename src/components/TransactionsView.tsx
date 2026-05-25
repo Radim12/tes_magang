@@ -166,26 +166,26 @@ export default function TransactionsView({
 
                   <div className="flex gap-14">
                     <div>
-                      <p className={`text-[12px] uppercase mb-1 ${isBlue ? 'text-white/70' : 'text-[#718EBF]'}`}>Card Holder</p>
-                      <p className="text-[15px] font-medium">{card.cardHolder}</p>
+                      <p className={`text-[11.5px] uppercase tracking-wider mb-1 ${isBlue ? 'text-white/70' : 'text-[#718EBF]'}`}>CARD HOLDER</p>
+                      <p className="text-[15px] font-semibold">{card.cardHolder}</p>
                     </div>
                     <div>
-                      <p className={`text-[12px] uppercase mb-1 ${isBlue ? 'text-white/60' : 'text-[#718EBF]'}`}>Valid Thru</p>
-                      <p className="text-[15px] font-medium">{card.validThru}</p>
+                      <p className={`text-[11.5px] uppercase tracking-wider mb-1 ${isBlue ? 'text-white/70' : 'text-[#718EBF]'}`}>VALID THRU</p>
+                      <p className="text-[15px] font-semibold">{card.validThru}</p>
                     </div>
                   </div>
 
-                  <div className={`h-[70px] -mx-6 px-6 flex items-center justify-between border-t ${
-                    isBlue ? 'bg-gradient-to-b from-white/10 to-transparent border-white/10' : 'border-[#DFEAF2]'
+                  <div className={`h-[70px] -mx-6 -mb-6 px-6 flex items-center justify-between border-t ${
+                    isBlue ? 'bg-gradient-to-b from-white/15 to-transparent border-white/10' : 'border-[#DFEAF2]'
                   }`}>
-                    <p className={`text-[15px] sm:text-[18px] md:text-[22px] tracking-wider font-semibold whitespace-nowrap ${
+                    <p className={`text-[16px] sm:text-[18px] md:text-[22px] tracking-wider font-semibold whitespace-nowrap ${
                       isBlue ? 'text-white' : 'text-[#343C6A]'
                     }`}>
                       {card.cardNumber}
                     </p>
                     <div className="flex -space-x-4 select-none">
-                      <div className={`w-[30px] h-[30px] rounded-full ${isBlue ? 'bg-white/50 backdrop-blur-sm' : 'bg-[#9199AF]/20'}`} />
-                      <div className={`w-[30px] h-[30px] rounded-full ${isBlue ? 'bg-white/30 backdrop-blur-sm' : 'bg-[#9199AF]/10'}`} />
+                      <div className={`w-[30px] h-[30px] rounded-full ${isBlue ? 'bg-white/50 backdrop-blur-sm' : 'bg-[#9199AF]/35'}`} />
+                      <div className={`w-[30px] h-[30px] rounded-full ${isBlue ? 'bg-white/30 backdrop-blur-sm' : 'bg-[#9199AF]/20'}`} />
                     </div>
                   </div>
                 </div>
@@ -303,10 +303,10 @@ export default function TransactionsView({
                             </div>
                             <span className="font-semibold text-[#343C6A] font-display">{tx.description}</span>
                           </td>
-                          <td className="px-6 py-4 text-[#718EBF] text-[15px]">{tx.transactionId}</td>
-                          <td className="px-6 py-4 text-[#718EBF] text-[15px]">{tx.type}</td>
-                          <td className="px-6 py-4 text-[#718EBF] text-[15px]">{cardDisplay}</td>
-                          <td className="px-6 py-4 text-[#718EBF] text-[15px]">{tx.date}</td>
+                          <td className="px-6 py-4 text-[#232323] text-[15px]">{tx.transactionId}</td>
+                          <td className="px-6 py-4 text-[#232323] text-[15px]">{tx.type}</td>
+                          <td className="px-6 py-4 text-[#232323] text-[15px]">{cardDisplay}</td>
+                          <td className="px-6 py-4 text-[#232323] text-[15px]">{tx.date}</td>
                           <td className={`px-6 py-4 font-bold text-[16px] ${amountColor}`}>
                             {formatAmount(tx)}
                           </td>

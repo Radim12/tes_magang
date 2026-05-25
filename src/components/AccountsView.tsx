@@ -289,7 +289,7 @@ export default function AccountsView({
             <span className="text-[17px] text-bank-muted font-semibold">See All</span>
           </div>
           
-          <div className="bg-bank-blue p-6 md:p-[25px] rounded-[25px] h-[235px] text-white flex flex-col justify-between shadow-md relative overflow-hidden select-none font-lato">
+          <div className="card-gradient-blue p-6 md:p-[25px] rounded-[25px] h-[235px] text-white flex flex-col justify-between shadow-md relative overflow-hidden select-none font-lato">
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-[12px] text-white/70 font-normal mb-1">Balance</p>
